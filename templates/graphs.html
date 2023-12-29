@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Series Graphs</title>
+</head>
+<body>
+    <table>
+        {% for price_graph, volume_graph, info_graph in graphs %}
+                <tr>
+                    <td><img src="{{ price_graph }}" alt="Price Graph"></td>
+                    <td><img src="{{ volume_graph }}" alt="Volume Graph"></td>
+                    <td><img src="{{ info_graph }}" alt="Info Graph"></td>
+                </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>
