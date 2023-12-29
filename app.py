@@ -26,7 +26,7 @@ def create_infographic(data, title):
     ax.text(0.5, 0.7, f"Max: {data.max():.6f}", ha='center')
     ax.text(0.5, 0.6, f"Min: {data.min():.6f}", ha='center')
     ax.text(0.5, 0.5, f"Last price: {data.iloc[0]:.6f}", ha='center')
-    ax.text(0.5, 0.4, f"Sell Target: {data.iloc[0]*1.03:.6f}", ha='center')
+    ax.text(0.5, 0.4, f"Last price*1.03: {data.iloc[0]*1.03:.6f}", ha='center')
 
     box = Rectangle((0, 0), 1, 1, fill=False, edgecolor="black", lw=2, transform=ax.transAxes)
     ax.add_patch(box)
